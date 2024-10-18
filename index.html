@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube-clone</title>
+    <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--------------------------Header---------------------------------->
+  <div class="container header-parent">
+    <header class="flex">
+      <div class="header-left flex">
+        <i class="bi bi-list icon" id="menu-btn"></i>
+        <img src="pics/yt-logo.png" alt="logo" id="ytlogo">
+      </div><!--header left end-->
+      <div class="header-middle flex">
+        <div class="input-div flex">
+          <input type="text" id="input" placeholder="Search">
+          <div id="search-icon-div" class="flex">
+            <i class="bi bi-search icon" id="search"></i>
+            
+          </div>
+        </div>
+        <i class="bi bi-mic icon"></i>
+      </div><!--header middle end-->
+      <div class="header-right flex">
+        <i class="bi bi-camera-video icon"></i>
+        <i class="bi bi-bell icon"></i>
+       <div class="dp">
+       </div>
+      </div><!--header right end-->
+    </header>
+  </div>
+  <!--------------------------Sider menu---------------------------------->
+  <div class="container flex">
+     <div class="side-menu">
+      <div class="top-section">
+        <a href="" class="flex"><i class="bi bi-house-door side-icons" ></i><p>Home</p></a>
+        <a href="" class="flex"><i class="bi bi-play-btn side-icons"></i><p>Shorts</p> </a>
+        <a href="" class="flex"> <i class="bi bi-tablet-landscape side-icons"></i><p>Subscription</p></a>
+      </div>
+      <hr><!--1st side menu section-->
+      <div class="top-section">
+        <p class="side-menu-p">You <i class="bi bi-caret-right"></i>
+        </p>
+        <a href="" class="flex"><i class="bi bi-person-square side-icons"></i><p>Your channel</p></a>
+        <a href="" class="flex"><i class="bi bi-calendar2-check side-icons"></i> <p>History</p></a>
+        <a href="" class="flex"><i class="bi bi-layers-fill side-icons"></i><p>Playlists</p></a>
+        <a href="" class="flex"><i class="bi bi-play-btn side-icons"></i><p> Your videos</p></a>
+        <a href="" class="flex"><i class="bi bi-clock side-icons"></i> <p>Watch later</p></a>
+        <a href="" class="flex"><i class="bi bi-hand-thumbs-up side-icons"></i> <p>Liked videos</p></a>
+      </div>
+      <hr><!--2nd side menu section-->
+      <div class="top-section subscription-section ">
+        <p class="side-menu-p">Subscriptions
+        </p>
+        <div class="channel-name flex">
+          <div class="side-menu-dp"></div><p>Dhruv Rathee</p>
+        </div>
+        <div class="channel-name flex">
+          <div class="side-menu-dp"></div><p>Carry Minati</p>
+        </div>
+        <div class="channel-name flex">
+          <div class="side-menu-dp"></div><p>Achary Parshant</p>
+        </div>
+        <div class="channel-name flex">
+          <div class="side-menu-dp"></div><p>Achary Parshant</p>
+        </div>
+        <div class="channel-name flex">
+          <div class="side-menu-dp"></div><p>Achary Parshant</p>
+        </div>
+      </div>
+      <hr><!--3rd side menu section-->
+      <div class="top-section explore-section">
+        <a href="" class="flex"><i class="bi bi-bag-check-fill side-icons"></i> <p>Shopping</p></a>
+        <a href="" class="flex"><i class="bi bi-music-note-beamed side-icons"></i> <p>Music</p></a>
+        <a href="" class="flex"><i class="bi bi-controller side-icons"></i> <p>Gaming</p></a>
+        <a href="" class="flex"><i class="bi bi-newspaper side-icons"></i> <p>News</p></a>
+        <a href="" class="flex"><i class="bi bi-broadcast side-icons"></i> <p>Live</p></a>
+      </div>
+      <hr><!--4th side menu section-->
+      <div class="top-section p-section">
+        <p>About Press Copyright Contact us Creators Advertise Developers</p>
+        <p>Terms Privacy Policy & Safety How YouTube worksTest new features</p>
+      </div>
+      </div>
+    <!--side-bar end-->
+     <div class="hero">
+      <div class="hero-a-section">
+          <!-- <i class="bi bi-arrow-left-circle" class="left-btn"></i>
+          <i class="bi bi-arrow-right-circle" class="right-btn"></i> -->
+        <a href="">All</a>
+        <a href="">Movies</a>
+        <a href="">Music</a>
+        <a href="">Html</a>
+        <a href="">Food</a>
+        <a href="">Holywood</a>
+        <a href="">Bollywood</a>
+        <a href="">Cources</a>
+        <a href="">Vlogs</a>
+        <a href="">Gaming</a>
+        <a href="">Show</a>
+        <a href="">Source Code</a>
+        <a href="">JS</a>
+        <a href="">More From Harry</a>
+        <a href="">Dance</a>
+        <a href="">Source Code</a>
+        <a href="">JS</a>
+        <a href="">More From Harry</a>
+        <a href="">Dance</a>
+      </div>
+      <div class="hero-main flex"> <!--hero video section-->
+        <a href="">
+          <div class="card">
+            <div class="thumbnail-container">
+              <img src="pics/ice-cream.jpg" class="thumbnail-img">
+            </div>
+            <div class="detail-container flex">
+              <div class="pp-container">
+                <img src="pics/dp1.jpg" class="pp">
+              </div>
+              <div class="details">
+                <h3>Learn From The best Tech leads find Your dream job</h3>
+                <p>Apna college</p>
+                <p>12k views &bull; 7day ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="">
+       <div class="card">
+            <div class="thumbnail-container">
+              <img src="pics/thumbnail1.jpg" class="thumbnail-img">
+            </div>
+            <div class="detail-container flex">
+              <div class="pp-container">
+                <img src="pics/dp1.jpg" class="pp">
+              </div>
+              <div class="details">
+                <h3>Learn From The best Tech leads Lorem ipsum dolor sit amet </h3>
+                <p>Apna college</p>
+                <p>12k views &bull; 7day ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="">
+
+          <div class="card">
+            <div class="thumbnail-container">
+              <img src="pics/thumbnail2.jpg" class="thumbnail-img">
+            </div>
+            <div class="detail-container flex">
+              <div class="pp-container">
+                <img src="pics/dp1.jpg" class="pp">
+              </div>
+              <div class="details">
+                <h3>Learn From The best Tech leads Lorem ipsum dolor sit amet </h3>
+                <p>Apna college</p>
+                <p>12k views &bull; 7day ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="">
+
+          <div class="card">
+            <div class="thumbnail-container">
+              <img src="pics/thumbnail3.jpg" class="thumbnail-img">
+            </div>
+            <div class="detail-container flex">
+              <div class="pp-container">
+                <img src="pics/dp1.jpg" class="pp">
+              </div>
+              <div class="details">
+                <h3>Learn From The best Tech leads Lorem ipsum dolor sit amet </h3>
+                <p>Apna college</p>
+                <p>12k views &bull; 7day ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="">
+
+          <div class="card">
+            <div class="thumbnail-container">
+              <img src="pics/thumbnail4.jpg" class="thumbnail-img">
+            </div>
+            <div class="detail-container flex">
+              <div class="pp-container">
+                <img src="pics/dp1.jpg" class="pp">
+              </div>
+              <div class="details">
+                <h3>Learn From The best Tech leads Lorem ipsum dolor sit amet </h3>
+                <p>Apna college</p>
+                <p>12k views &bull; 7day ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="card">
+            <div class="thumbnail-container">
+              <img src="pics/thumbnail6.jpg" class="thumbnail-img">
+            </div>
+            <div class="detail-container flex">
+              <div class="pp-container">
+                <img src="pics/dp1.jpg" class="pp">
+              </div>
+              <div class="details">
+                <h3>Learn From The best Tech leads Lorem ipsum dolor sit amet </h3>
+                <p>Apna college</p>
+                <p>12k views &bull; 7day ago</p>
+              </div>
+            </div>
+          </div>
+
+        </a>
+        <a href="">
+
+          <div class="card">
+            <div class="thumbnail-container">
+              <img src="pics/thumbnail7.jpg" class="thumbnail-img">
+            </div>
+            <div class="detail-container flex">
+              <div class="pp-container">
+                <img src="pics/dp1.jpg" class="pp">
+              </div>
+              <div class="details">
+                <h3>Learn From The best Tech leads Lorem ipsum dolor sit amet </h3>
+                <p>Apna college</p>
+                <p>12k views &bull; 7day ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="">
+
+          <div class="card">
+            <div class="thumbnail-container">
+              <img src="pics/thumbnail8.jpg" class="thumbnail-img">
+            </div>
+            <div class="detail-container flex">
+              <div class="pp-container">
+                <img src="pics/dp1.jpg" class="pp">
+              </div>
+              <div class="details">
+                <h3>Learn From The best Tech leads Lorem ipsum dolor sit amet </h3>
+                <p>Apna college</p>
+                <p>12k views &bull; 7day ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="">
+
+          <div class="card">
+            <div class="thumbnail-container">
+              <img src="pics/thumbnail9.jpg" class="thumbnail-img">
+            </div>
+            <div class="detail-container flex">
+              <div class="pp-container">
+                <img src="pics/dp1.jpg" class="pp">
+              </div>
+              <div class="details">
+                <h3>Learn From The best Tech leads Lorem ipsum dolor sit amet </h3>
+                <p>Apna college</p>
+                <p>12k views &bull; 7day ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="">
+
+          <div class="card">
+            <div class="thumbnail-container">
+              <img src="pics/thumbnail10.jpg" class="thumbnail-img">
+            </div>
+            <div class="detail-container flex">
+              <div class="pp-container">
+                <img src="pics/dp1.jpg" class="pp">
+              </div>
+              <div class="details">
+                <h3>Learn From The best Tech leads Lorem ipsum dolor sit amet </h3>
+                <p>Apna college</p>
+                <p>12k views &bull; 7day ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="">
+
+          <div class="card">
+            <div class="thumbnail-container">
+              <img src="pics/thumbnail11.png" class="thumbnail-img">
+            </div>
+            <div class="detail-container flex">
+              <div class="pp-container">
+                <img src="pics/dp1.jpg" class="pp">
+              </div>
+              <div class="details">
+                <h3>Learn From The best Tech leads Lorem ipsum dolor sit amet </h3>
+                <p>Apna college</p>
+                <p>12k views &bull; 7day ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+  </div>
+  </div>
+ 
+    <script src="script.js"></script>
+    <script>
+        // feather.replace(
+        
+        // );
+      </script>
+</body>
+</html>
