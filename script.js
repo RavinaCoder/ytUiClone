@@ -12,5 +12,12 @@ menu.addEventListener("click",()=>{
 let heroTop = document.querySelector(".hero-a-section");
 let heroTopLinks = heroTop.querySelectorAll('a');
 
+let defultDp = document.getElementById("defult-dp");
+let inputFile = document.getElementById("main-dp");
+inputFile.addEventListener("change",()=>{
+defultDp.src = URL.createObjectURL(inputFile.files[0]);
+});
+
+
 
 

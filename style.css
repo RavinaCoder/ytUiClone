@@ -113,6 +113,22 @@ header{
     background-position: right;
     background-size: cover;
 }
+.main-profile{
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.main-profile img{
+    object-fit: cover;
+    height: 2.1rem;
+    width: 2.1rem;
+    border-radius: 50%;
+}
+
+.file-input{
+    display: none;
+}
+
 #ytlogo{
     height: 3.5rem;
 }
@@ -122,6 +138,7 @@ header{
     z-index: 1000;
     background-color: white;
 }
+
 /*-------------------------side menu----------------------------------*/
 .side-menu{
     width: 15%;
