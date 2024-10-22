@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+h1 , h2, h3, h4{
+    text-transform: capitalize;
+}
+
+.container{
+    /* background-color: red; */
+    justify-content: center;
+    
+}
+.video-container{
+    /* background-color: rgb(25, 0, 255); */
+    width: 90%;  
+    margin-top: 2rem;
+}
+.left-part{
+    position: relative;
+    /* background-color: rgb(9, 255, 0); */
+    width: 70%;  
+    overflow-y: auto;
+    height: 100vh;
+}
+
+ video{
+    width: 100%;
+    border-radius: 3%;
+ }
+ .flex{
+    align-items: center;
+ }
+ .flex-c{
+    display: flex;
+ }
+ .left-part, .right-part {
+     scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.left-part::-webkit-scrollbar, .right-part::-webkit-scrollbar {
+    display: none; /* Webkit (Chrome, Safari) */
+}
+.below-video-container h2{
+    margin-block: 0.5rem;
+}
+.channel{
+    justify-content: space-between;
+    
+}
+.channel-dp{
+    margin-right: 0.4rem;
+}
+.channel-name{
+    margin-right: 1rem;
+}
+.channel-name p{
+    font-size: 0.7rem;
+}
+.channel-right{
+    gap: 0.5rem;
+}
+.btn{
+    
+    background-color: var(--light-mode-li-clr);
+    padding: 0.5rem;
+    padding-inline: 0.8rem;
+    border-radius: 2rem;
+}
+.subs{
+    background-color: black;
+    font-weight: 600;
+    color: white;
+}
+button{
+    gap: 0.2rem;
+    align-items: center;
+}
+button i{
+    font-size: 1rem;
+}
+.channel-details{
+    height: 85px;
+    overflow: hidden;
+    margin-top: 1rem;
+    background-color: var(--light-mode-li-clr);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+.vid-card-left img{
+border-radius: 10px;
+}
+.vid-card{
+    gap: 2%;
+    margin-top: 0.8rem;
+    cursor: pointer;
+}
+/* ----------------------right part--------------------- */
+/* .small-video-section{
+    background-color: red;
+} */
+.vid-card-right p {
+    font-size: 0.8rem;
+}
+.vid-card-right a{
+    text-decoration: none;
+    color: black;
+    background-color: var(--light-mode-li-clr);
+    padding: 0.2rem;
+    font-size: 0.7rem;
+    border-radius: 2px;
+}
+
+.right-part{
+    position: relative;
+   
+    width: 28%;
+    margin-left: 2%; 
+    overflow-y: auto;
+    height: 100vh;
+}
+/* ---------------------------------comment section--------------------------------------- */
+.comment-section{
+margin-top: 1rem;
+
+}
+.total-comment p{
+    font-size: 0.8rem;
+    font-weight: 550;
+    margin-left: 1rem;
+}
+.input{
+    border-bottom: 1px solid #dadada;
+   flex-grow: 1;
+   padding: 0.5rem;
+}
+.c-dp{
+    margin-right: 1rem;
+}
+/* -------------------------css------------------------*/
+.random-dp{
+  
+    margin-right: 1rem;
+    /* height: 2.1rem;
+    width: 2.1rem; */
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    background-position: right;
+    background-size: cover;
+    
+}
+.random-dp img{
+    border-radius: 50%;
+}
+.comment-input{
+   
+    margin-bottom:2rem;
+}
+.total-comment{
+ 
+    margin-block: 1rem;
+}
+.commenter-details{
+ 
+    display: flex;
+    justify-content: space-between;
+    margin-block:1.5rem;
+}
+.comment-list{
+    margin-block:1rem;
+ 
+}
+/* -------------------------css------------------------*/
+.comment p:first-child {
+   font-weight: 510;
+   font-size: 0.8rem;
+
+}
+.comment p span{
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+.c-btn{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.3rem;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
